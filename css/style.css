@@ -369,13 +369,14 @@ header .info-container .phone {
 
 /*====SUNTEM AICI==== */
 
-.suntem-aici .container-fluid {
-    padding-top: 200px;
+.suntem-aici {
+    padding: 200px 0  200px 0;
     background: #f5f3f3;
 }
 
 .suntem-aici-title-wraper {
-    padding:100px 0 30px 0;
+    padding:50px 0 30px 0;
+    width: 200px;
 }
 
 .suntem-aici-title {
@@ -384,14 +385,61 @@ header .info-container .phone {
     color: #464444;
 }
 
-.suntem-aici-title-wraper {
-    width: 200px;
-}
 
 .content-wraper {
     background-color: #fff;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .adresa{
     text-align:right;
+    padding-left: 30px;
 }
+
+.adresa h4{
+    font-size:1.1em;
+    margin-bottom:20px;
+}
+
+.formular-contact form{
+    font-family: 'Ubuntu', sans-serif;
+    width:300px;
+    padding-bottom: 50px;
+}
+
+/*====FOOTER==== */
+
+footer{
+    background: #464444;
+}
+
+.footer-social{
+    display:table;
+    width:150px;
+    height:100px;
+    text-align:center;
+}
+
+.footer-social-wraper {
+    display:table;
+    width:250px;
+    height:100px;
+    text-align:center;
+    font-size: 32px;
+}
+
+.footer-social-wrapper a{
+    margin-right:30px;
+}
+
+.footer-social{
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.footer-social .badge{
+    margin-right: 20px;
+}
+
