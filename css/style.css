@@ -15,8 +15,8 @@ h2,
 h3,
 h4,
 h5,
-h6
- {
+h6,
+p {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -64,7 +64,7 @@ header .info-container .phone {
 }
 
 .badge.social {
-    display:inline-block;
+    display: inline-block;
     background: #ccc;
     font-size: 22px;
     height: 35px;
@@ -75,7 +75,7 @@ header .info-container .phone {
     padding: 0;
     border-radius: 50px;
     color: #fff;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .badge.social.twitter:hover {
@@ -83,7 +83,7 @@ header .info-container .phone {
 
 }
 
- .badge.social.facebook:hover {
+.badge.social.facebook:hover {
     background-color: #3b5998;
 }
 
@@ -204,8 +204,8 @@ header .info-container .phone {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    padding:45px 25px 40px;
-    
+    padding: 45px 25px 40px;
+
 }
 
 
@@ -219,119 +219,179 @@ header .info-container .phone {
     color: #464444;
 
 }
+
 .tractari-auto-title h2 {
     font-weight: bold;
     font-size: 35px;
 }
-.tractari-auto-title h4{
+
+.tractari-auto-title h4 {
     font-size: 24px;
 }
 
-.car-icons{
-    height:45vh;
+.car-icons {
+    height: 45vh;
 }
-.car-icons img{
-    width:100%;
+
+.car-icons img {
+    width: 100%;
     margin-top: 22px;
 }
 
-.car-crashed{
+.car-crashed {
     position: absolute;
-    top:10%;
-} 
+    top: 10%;
+}
 
-.car-platform{
+.car-platform {
     position: absolute;
-    top:50%;
+    top: 50%;
 }
 
 .car-crashed,
-.car-platform{
-    left:20%;
-    width:120px;
-    height:120px;
+.car-platform {
+    left: 20%;
+    width: 120px;
+    height: 120px;
     margin-bottom: 50px;
     border: 1px solid #FFFFFF;
-    border-radius:100%;
+    border-radius: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #fcca47;
 }
 
 
 
-.tractari-auto-description{
+.tractari-auto-description {
     height: 45vh;
     background: #C4C4C4;
     font-size: 18px;
     margin-bottom: 50px;
     font-family: 'Ubuntu', sans-serif;
-    overflow:auto;
+    overflow: auto;
 }
 
-.tractari-auto-description p{
-    padding:45px 25px 40px;
+.tractari-auto-description p {
+    padding: 45px 25px 40px;
     line-height: 28px;
 }
 
 /* Carousel */
 
-#carouselExampleIndicators{
-    margin-bottom:100px;
+#carouselExampleIndicators {
+    margin-bottom: 100px;
 }
 
-.carousel-item .col-sm-4{
+.carousel-item .col-sm-4 {
     padding-right: 0;
 }
 
-.carousel-control-next-icon, 
-.carousel-control-prev-icon{
-    width:30px!important;
-    height:30px!important;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 30px !important;
+    height: 30px !important;
 }
 
 
 /*====TARIFE TRACTARI==== */
 
-.tarife-tractari-title{
-    display:table;
-    text-align:left;
-    height:100px;
-    color:#fff;
+.tarife-tractari-title {
+    display: table;
+    text-align: left;
+    height: 100px;
+    color: #fff;
     background-color: #464444;
     border-bottom: 10px solid #fff;
 }
 
-.tarife-tractari-title h2{
-    display:table-cell;
-    padding-left:20px;
+.tarife-tractari-title h2 {
+    display: table-cell;
+    padding-left: 20px;
     vertical-align: middle;
 }
 
-.explicare-tarife{
-    height:500px;
+.explicare-tarife {
+    min-height: 500px;
     background: #fcca47;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
-.explicare-tarife .interaction{
-    padding-top:100px;
+.explicare-tarife .row .col-sm-4 {
+    padding: 0;
 }
 
-.calling{
-    /* text-align:center; */
+.explicare-tarife .interaction {
+    padding-top: 100px;
 }
 
-.circle{
-    display:table;
-    width:100px;
-    height:100px;
-    text-align:center;
+.info-wraper p {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 23px;
+    text-align: center;
+    color: #464444;
+}
+
+.circle {
+    display: table;
+    width: 100px;
+    height: 100px;
+    text-align: center;
     border: 6px solid rgba(0, 0, 0, 0.38);
     border-radius: 100%;
     font-size: 50px;
 }
 
-.circle i{
-    display:table-cell;
+.circle i {
+    display: table-cell;
     vertical-align: middle;
+}
+
+.arrow {
+    width: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.bullet {
+    width: 25px;
+    font-size: 25px;
+}
+
+.track-line {
+    margin-top: -18px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.53);
+    z-index: 1;
+}
+
+
+/*====SUNTEM AICI==== */
+
+.suntem-aici .container-fluid {
+    padding-top: 200px;
+    background: #f5f3f3;
+}
+
+.suntem-aici-title-wraper {
+    padding:100px 0 30px 0;
+}
+
+.suntem-aici-title {
+    font-weight: 900;
+    font-size: 2em;
+    color: #464444;
+}
+
+.suntem-aici-title-wraper {
+    width: 200px;
+}
+
+.content-wraper {
+    background-color: #fff;
+}
+
+.adresa{
+    text-align:right;
 }
