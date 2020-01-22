@@ -334,6 +334,7 @@ header .info-container .phone {
 }
 
 .info-wraper p {
+    padding: 0 20px;
     text-align: center;
     font-size: 1.1em;
     line-height: 23px;
@@ -470,7 +471,7 @@ footer {
     }
 
     #hero {
-        height: 90vh;
+        height: 70vh;
     }
 
     #hero .banner h1 {
@@ -526,10 +527,65 @@ footer {
         padding: 45px 10px 40px;
     }
 
+    .tractari-auto .tractari-auto-title {
+        margin-bottom: 0;
+    }
+
     .tractari-auto-title h2,
     .despre-noi .despre-noi-col1 h2{
         font-size: 1.9em;
     }
 
+    .car-icons {
+        height: 25vh;
+    }
+
+    .car-crashed,
+    .car-platform{
+        width:100px;
+        height:100px;
+        margin-bottom:0;
+        top: 13%;
+    }
+
+    .car-platform {
+        left: 53%;
+    }
+
+    .car-crashed{
+        left: 15%;
+    }
+
+    .carousel-item .col-sm-4 {
+        padding-bottom: 5px;
+    }
+
+    #carouselExampleIndicators {
+        margin-bottom: 30px;
+    }
+
+    .tarife-tractari-title {
+        text-align: center;
+    }
+    .tarife-tractari-title h2 {
+        padding-left:0;
+        font-size: 1.6em;
+    }
+
+    .suntem-aici {
+        padding: 50px 0 50px 0;
+    }
+
+    .adresa {
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+  
+    .suntem-aici-title-wraper {
+        text-align: center;
+    }
+    .suntem-aici-title {
+        font-size: 1.8em;
+    }
 
 }
