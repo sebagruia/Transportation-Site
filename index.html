@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Tractari Auto Profesionale">
+  <meta name="author" content="Sebastian Gruia https://sebagruia.github.io/SebastianGruia-Project-Page/">
   <title>Porumbelul Tractari</title>
   <!-- LINKS -->
   <link rel="icon" href="./img/PORUMBELUL TRACTARI fara telefon.png">
   <!-- Link Css -->
   <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <!-- Link Hamburger Css -->
+  <link rel="stylesheet" href="css/hamburger.css" type="text/css">
   <!-- Links Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -33,9 +36,9 @@
             <div class="col-sm-6 ">
               <div class="logo-container text-left">
                 <img class="logo" src="./img/PORUMBELUL TRACTARI fara telefon200x200.png"
-                alt="A piggeon pulling a car icon">
+                  alt="A piggeon pulling a car icon">
               </div>
-              
+
             </div>
             <!--end col-sm-6-->
             <div class="col-sm-6">
@@ -48,16 +51,16 @@
                   <a href="#" class="badge social google-plus" target="_blank"><i class="fab fa-google-plus"></i></a>
                   <a href="#" class="badge social twitter" target="_blank"><i class="fab fa-twitter-square"></i></a>
                 </div>
+              </div>
             </div>
+            <!--end col-sm-6-->
           </div>
-          <!--end col-sm-6-->
-        </div>
-        <!--end row-->
+          <!--end row-->
 
+        </div>
+        <!--end col-sm-8-->
       </div>
-      <!--end col-sm-8-->
-    </div>
-    <!--end row-->
+      <!--end row-->
     </div>
     <!--end container-->
 
@@ -67,27 +70,29 @@
     ##################################-->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container justify-content-center">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class=" navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle Navigation</span>
-          <span class="navbar-toggler-icon"></span>
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav text-center">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Despre Noi <span class="sr-only">(current)</span></a>
+              <a class="nav-link scroll-to-despre-noi main-links" href="">Despre Noi <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Tractari Auto</a>
+              <a class="nav-link scroll-to-tractari-auto main-links" href="">Tractari Auto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="resources.html">Tarife Tractari</a>
+              <a class="nav-link scroll-to-tarife-tractari main-links" href="">Tarife Tractari</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Blog</a>
+              <a class="nav-link scroll-to-blog main-links" href="">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link scroll-to-contact main-links" href="">Contact</a>
             </li>
           </ul>
         </div>
@@ -102,12 +107,12 @@
   <!-- #############################
       HERO 
     ##################################-->
-  <section id="hero" data-type="background" data-speed="5">
+  <section id="hero" data-type="background" data-speed="20">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 banner">
           <h1>PORUMBELUL TRACTARI</h1>
-          <h4>SERIOZITATE SI PROFESIONALISM ATUNCI CAND AI NEVOIE</h4>
+          <h4>SERIOZITATE SI PROFESIONALISM <br> ATUNCI CAND AI NEVOIE</h4>
         </div>
         <!--end col-->
       </div>
@@ -282,7 +287,7 @@
 
 
       <div class="row explicare-tarife">
-        <div class="col-sm-8 offset-sm-2 interaction">
+        <div class="col-lg-8 offset-lg-2 interaction">
           <div class="row">
 
             <div class="col-sm-4">
@@ -353,12 +358,12 @@
     ##################################-->
 
   <section class="suntem-aici">
-    <div class="container">
+    <div class="container-lg">
 
       <div class="row">
 
 
-        <div class="col-sm-8 offset-sm-2 content-wraper">
+        <div class="col-lg-8 offset-lg-2 content-wraper">
           <div class="suntem-aici-title-wraper m-auto">
             <h2 class="suntem-aici-title">SUNTEM AICI</h2>
             <hr class="info-hr">
@@ -410,16 +415,16 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          
-            <div class="footer-social-wraper m-auto">
-              <div class="footer-social">
-                <a href="#" class="badge social facebook mr-20" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="badge social google-plus" target="_blank"><i class="fab fa-google-plus"></i></a>
-                <a href="#" class="badge social twitter" target="_blank"><i class="fab fa-twitter-square"></i></a>
-              </div>
-              
+
+          <div class="footer-social-wraper m-auto">
+            <div class="footer-social">
+              <a href="#" class="badge social facebook mr-20" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="badge social google-plus" target="_blank"><i class="fab fa-google-plus"></i></a>
+              <a href="#" class="badge social twitter" target="_blank"><i class="fab fa-twitter-square"></i></a>
             </div>
-          
+
+          </div>
+
         </div>
       </div>
     </div>
@@ -436,7 +441,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
-  <script src="js/app.js" type="text/javascript"></script>
+  <script src="./js/app.js" type="text/javascript"></script>
 </body>
 
 </html>
+
+
+
