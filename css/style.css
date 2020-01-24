@@ -4,7 +4,6 @@
 }
 
 body {
-    margin-top: 316px !important;
     background: #E5E5E5;
     font-size: 16px;
 }
@@ -139,7 +138,7 @@ header .info-container .phone {
 #hero {
     height: 100vh;
     background-image: url('../img/roadWithBrakeSigns.jpg');
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -147,10 +146,13 @@ header .info-container .phone {
 
 }
 
+
 #hero .banner {
     position: absolute;
+    width:100%;
     height: 160px;
     left: 0px;
+    top:322px;
     background: rgba(46, 45, 45, 0.41);
     text-align: center;
 }
@@ -254,12 +256,12 @@ header .info-container .phone {
 
 .car-crashed {
     position: absolute;
-    top: 10%;
+    top: 15%;
 }
 
 .car-platform {
     position: absolute;
-    top: 50%;
+    top: 55%;
 }
 
 .car-crashed,
@@ -472,10 +474,6 @@ footer {
 
 @media screen and (max-width:576px) {
 
-    body {
-        margin-top: 163px !important;
-    }
-
     header .info-container {
         width: 85%;
         padding-top: 14px;
@@ -490,7 +488,11 @@ footer {
     }
 
     #hero {
-        height: 70vh;
+        height: 96vh;
+    }
+
+    #hero .banner{
+        top: 163px;
     }
 
     #hero .banner h1 {
@@ -659,6 +661,7 @@ footer {
 
     #hero .banner {
         height: 140px;
+        top: 10px;
     }
 
     #hero .banner h1 {

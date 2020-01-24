@@ -1,5 +1,56 @@
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
+
+    
+     // Scroll on buttons using Jquery
+
+    //  $('.scroll-to-despre-noi').click(function () {
+
+    //     $('html, body').animate({
+    //         scrollTop: $('.despre-noi').offset().top
+    //     }, 1000);
+
+    // });
+
+
+    // $('.scroll-to-tractari-auto').click(function () {
+
+    //     $('html, body').animate({
+    //         scrollTop: $('.tractari-auto').offset().top
+    //     }, 1000);
+
+    // });
+
+    // $('.scroll-to-tarife-tractari').click(function () {
+
+    //     $('html, body').animate({
+    //         scrollTop: $('.tarife-tractari').offset().top
+    //     }, 1000);
+
+    // });
+
+
+    const move = ()=>{
+        const toDespreNoi = document.querySelector('.scroll-to-despre-noi');
+        const targetDespreNoi = document.querySelector('.despre-noi');
+        const widthOftargetDespreNoi = targetDespreNoi.clientWidth;
+        const heightOftargetDespreNoi = targetDespreNoi.clientHeight;
+        toDespreNoi.addEventListener('click', ( )=>{
+            window.scrollTo({
+                top:heightOftargetDespreNoi,
+                left:widthOftargetDespreNoi,
+                behaviour:'smooth'
+
+            });
+
+        });
+    }
+
+    move();
+
+
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
     console.log(`latime = ${windowWidth} si inaltime = ${windowHeight}`);
@@ -139,25 +190,12 @@ document.addEventListener('DOMContentLoaded', () => {
    
         if (windowWidth < 576) {
             headerElement.innerHTML = headerElementHtml1;
+            return;
         }
-        else {
-            // Adding Background Parallax to devices with width > 576px
-            const hero = document.getElementById('hero');
-            window.addEventListener('scroll', (e) => {
-                if (hero.getAttribute("data-type") === 'background') {
-                    const test = hero.getAttribute('data-speed');
-                    let yPos = -(window.pageYOffset / parseInt(test));
-                    // Put together our final background position
-                    let coords = `50% ${yPos}px`;
-                    // Move the background
-                    hero.setAttribute("style", `background-position: ${coords};`);
-                }
-            });
-        }
-
-        //Adding a different Nav for devices with height < 450px landscape mode
-        if(windowWidth<=691 && windowHeight <= 520) {
+        // Adding a different Nav for devices with height < 450px landscape mode
+       else if(windowWidth<=691 && windowHeight <= 520) {
             headerElement.innerHTML = headerElementHtml2;
+            return;
         }
 
         if(windowHeight < 450){
@@ -177,32 +215,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-     // Scroll on buttons using Jquery
+    // Adding Background Parallax to devices with width > 576px
+            const hero = document.getElementById('hero');
+            window.addEventListener('scroll', (e) => {
+                if (hero.getAttribute("data-type") === 'background') {
+                    const test = hero.getAttribute('data-speed');
+                    let yPos = -(window.pageYOffset / parseInt(test));
+                    // Put together our final background position
+                    let coords = `50% ${yPos}px`;
+                    // Move the background
+                    hero.setAttribute("style", `background-position: ${coords};`);
+                }
+            });
 
-     $('.scroll-to-despre-noi').click(function () {
-
-        $('html, body').animate({
-            scrollTop: $('.despre-noi').offset().top
-        }, 1000);
-
-    });
-
-
-    $('.scroll-to-tractari-auto').click(function () {
-
-        $('html, body').animate({
-            scrollTop: $('.tractari-auto').offset().top
-        }, 1000);
-
-    });
-
-    $('.scroll-to-tarife-tractari').click(function () {
-
-        $('html, body').animate({
-            scrollTop: $('.tarife-tractari').offset().top
-        }, 1000);
-
-    });
 
 
 });
