@@ -67,12 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                 
 
                                     <nav class="navbar navbar-expand-lg navbar-light">
-                                    <div class="container-fluid ">
-                                        <div class="info-container text-center m-auto">
-                                        <h3>NON STOP <i class="fas fa-headset"></i></h3>
-                                        <hr class="info-hr">
-                                        <h5>SUNA ACUM | <span class="phone">Tel: +40785911911</span></h5>
-                                    </div>
+                                        <div class="container-fluid ">
+                                            <div class="info-container text-center m-auto">
+                                            <h3>NON STOP <i class="fas fa-headset"></i></h3>
+                                            <hr class="info-hr">
+                                            <h5>SUNA ACUM | <span class="phone">Tel: +40785911911</span></h5>
+                                        </div>
                                        
                                         <button class=" navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#navbarNav"
                                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
