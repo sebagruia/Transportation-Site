@@ -148,11 +148,15 @@ header .info-container .phone {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
-    position: relative;
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#hero:after{
+    position: fixed;
 
 }
-
 
 #hero .banner {
     position: absolute;
@@ -701,6 +705,12 @@ footer {
 
     .formular-contact form {
         width: auto;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #hero {
+     background-attachment: fixed;
     }
 }
 
