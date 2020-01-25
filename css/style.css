@@ -71,6 +71,13 @@ header .info-container .phone {
     color: #dd5638;
 }
 
+.fa-facebook,
+.fa-google-plus,
+.fa-twitter{
+    padding-right: 0.7px; 
+
+}
+
 .badge.social {
     display: inline-block;
     background: #ccc;
@@ -463,36 +470,82 @@ footer {
 
 
 /*====MEDIA QUERIES==== */
-@media screen and (max-width:375px) {
+@media screen and (max-width:374px) {
+    .navbar-nav{
+        padding-top: 10px!important;
+    }
+    #hero .banner {
+        top: 112px!important;
+    }
+    header .info-row {
+        padding:0;
+    }
+  
+    .navbar-toggler {
+        top: 7px!important;
+        right: 11px!important;
+    }
+    .info-hr {
+        width: 38%;
+    }
 
     .navbar .nav-item:first-child,
     .navbar .nav-item:nth-child(6) {
         margin-bottom: 10px !important;
     }
-}
 
-
-@media screen and (max-width:576px) {
-
-    header .info-container {
-        width: 85%;
-        padding-top: 14px;
-    }
-
-    .logo-container {
-        width: 150px;
+    .navbar .nav-link {
+        font-size: 17px;
     }
 
     .badge.social {
-        line-height: 38px;
+        line-height: 34px!important;
     }
+
+    .logo-container {
+        width: 100px!important;
+    }
+}
+
+
+@media screen and  (max-width:576px) {
+    .navbar-nav{
+        padding-top: 20px;
+    }
+    header .info-container {
+        width: 85%;
+        padding-top: 14px;
+
+    }
+    header .info-container h3 {
+        font-size: 20px;
+    }
+    header .info-container h5 {
+        line-height: 13px;
+    }
+
+    .info-container .info-hr {
+        margin-top: -2px;
+        border-top: 3px solid #F5F3F3;
+        width: 30%;
+    }
+
+    .navbar-toggler {
+        top: 22px!important;
+        right: 14px!important;
+    }
+
+    .logo-container {
+        width: 120px;
+    }
+
 
     #hero {
         height: 96vh;
     }
 
     #hero .banner{
-        top: 163px;
+        top: 115px;
     }
 
     #hero .banner h1 {
@@ -564,8 +617,6 @@ footer {
         font-size: 1.9em;
     }
 
-
-
     .car-crashed,
     .car-platform {
         width: 100px;
@@ -618,7 +669,7 @@ footer {
 
 }
 
-@media screen and (min-width:577px) and (max-width:992px) {
+@media screen and (min-width:577px) and (max-width:1397px) {
     header .info-container {
         width: 95%;
     }
@@ -629,6 +680,9 @@ footer {
         padding-top: 13px;
     }
 
+    #hero .banner{
+        top: 310px;
+    }
 
     .car-icons,
     .despre-noi .despre-noi-col1,
@@ -690,13 +744,6 @@ footer {
      .link-container .group-2 a {
         border-bottom: 1px solid rgb(245, 243, 243);
     }
-
-     /* .link-container .group-1 a:hover,
-     .link-container .group-2 a:hover {
-        color:#fff!important;
-    } */
-
-
 
     .navbar .nav-item {
         border-right: none;
