@@ -312,10 +312,10 @@ header .info-row {
     overflow: auto;
 }
 
-.tractari-auto-description p {
+/* .tractari-auto-description p {
     padding: 45px 25px 40px;
     line-height: 28px;
-}
+} */
 
 /* Carousel */
 
@@ -822,6 +822,15 @@ footer {
     .despre-noi .despre-noi-col2, 
     .tractari-auto-description {
         height: 450px;
+    }
+
+    .despre-noi .despre-noi-description {
+        font-size: 1.1em;
+        line-height: 33px;
+    }
+     .tractari-auto-description p {
+        font-size: 1.1em;
+        line-height: 30px;
     }
 
     .car-crashed {
