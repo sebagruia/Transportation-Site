@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // Hamburger Functionality 
+    // Hamburger and Navbar-collapse Functionality
     const navLinks = document.querySelectorAll('.nav-link');
     const navbarCollapse = document.querySelector('.navbar-collapse');
     const navbarToggler = document.querySelector('.navbar-toggler');
@@ -67,9 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navbarToggler.classList.toggle('is-active');
     });
 
-    
-    
-    
     navLinks.forEach((navLink)=>{
         console.log(navLink);
         if(width<=992){
@@ -81,9 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
         
-
     });
-
-
 });
 
