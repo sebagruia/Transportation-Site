@@ -1,0 +1,42 @@
+/* ===GENERAL=== */
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #E5E5E5;
+    font-size: 16px;
+}
+
+
+img{
+    width:100%;
+}
+
+/* ===HEADER=== */
+.home-button{
+    color: #343a40;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.home-button:hover{
+    text-decoration: none;
+    color:#fcca47;
+
+}
+header{
+    margin-top:10vh;
+}
+.header-img-container{
+    height:350px;
+    background-image: url('../img/long-exposure2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    border:1px solid
+}

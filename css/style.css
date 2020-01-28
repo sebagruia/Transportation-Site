@@ -163,13 +163,12 @@ header .info-row {
 #hero {
     height: 100vh;
     background-image: url('../img/roadWithBrakeSigns.jpg');
-    background-position: center center;
+    background-position: 50% 0px;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -541,10 +540,6 @@ footer {
     }
 
 
-    #hero {
-        height: 96vh;
-    }
-
     #hero .banner {
         top: 87px;
         height: 223px;
@@ -703,7 +698,9 @@ footer {
 
 @media screen and (min-width: 480px){
     #hero .banner {
-        height: 250px;
+        top: 87px;
+        height: 228px;
+        background: rgba(46, 45, 45, 0.61);
     }
 #hero .banner h1 {
         margin-top: 20px;
