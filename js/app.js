@@ -6,34 +6,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //  Scroll on buttons using Jquery
 
-    $('.scroll-to-home').click(function (event) {
-        console.log(event)
+    $('.scroll-to-home').click(function () {
         $('html, body').animate({
             scrollTop: $('#hero').offset().top
         },1000);
     });
     $('.scroll-to-despre-noi').click(function () {
-        console.log(event)
         $('html, body').animate({
-            scrollTop: $('.despre-noi').offset().top
+            scrollTop: $('.despre-noi').offset().top -100
         },1000);
     });
 
 
     $('.scroll-to-tractari-auto').click(function () {
         $('html, body').animate({
-            scrollTop: $('.tractari-auto').offset().top
+            scrollTop: $('.tractari-auto-title').offset().top -140
         }, 1000);
     });
 
     $('.scroll-to-tarife-tractari').click(function () {
         $('html, body').animate({
-            scrollTop: $('.tarife-tractari').offset().top
+            scrollTop: $('.tarife-tractari-title').offset().top -90
         }, 1000);
     });
     $('.scroll-to-contact').click(function () {
         $('html, body').animate({
-            scrollTop: $('.suntem-aici').offset().top
+            scrollTop: $('.suntem-aici-title-wraper').offset().top -60
         }, 1000);
     });
 
@@ -62,9 +60,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Hamburger Functionality 
-    const hamburger = document.querySelector('.hamburger');
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('is-active');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    navbarToggler.addEventListener('click', () => {
+        navbarToggler.classList.toggle('is-active');
+    });
+
+    
+    
+    
+    navLinks.forEach((navLink)=>{
+        console.log(navLink);
+        if(width<=992){
+            navLink.addEventListener('click', ()=>{
+                navbarToggler.classList.toggle('is-active');
+                navbarToggler.classList.toggle('collapsed');
+                navbarCollapse.classList.toggle('show');
+                
+            });
+        }
+        
+
     });
 
 
