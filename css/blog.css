@@ -14,24 +14,50 @@ img{
     width:100%;
 }
 
+a{
+    color: #343a40;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
 /* ===HEADER=== */
+.nav-container{
+    margin-bottom: 20px;
+}
 .home-button{
     color: #343a40;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
-    margin-bottom: 20px;
 }
-.home-button:hover{
+.fab{
+    color: #343a40;
+}
+.home-button:hover,
+.fab:hover{
     text-decoration: none;
     color:#fcca47;
+    cursor:pointer;
+}
 
+.fab{
+    margin-left:10px;
+    font-size: 1.05em;;
+}
+.fa-google-plus-g{
+    font-size: 1.2em;
 }
 header{
-    margin-top:10vh;
+    margin-top:5vh;
 }
 .header-img-container{
     height:350px;
-    background-image: url('../img/long-exposure2.jpeg');
+    background-image: url('../img/Blog img/long-exposure2.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,4 +65,29 @@ header{
     -moz-background-size: cover;
     -o-background-size: cover;
     border:1px solid
+}
+
+/* ===CONTENT=== */
+
+.blog-content h1{
+    color: #343a40;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.card-container{
+    padding:0!important;
+    
+}
+.card{
+    width:100%!important;
+}
+
+.card{
+    margin-bottom:5vh;
+}
+article:first-child{
+    margin-top:15vh;
 }
