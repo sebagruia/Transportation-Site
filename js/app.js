@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     navLinks.forEach((navLink)=>{
-        console.log(navLink);
         if(width<=992){
             navLink.addEventListener('click', ()=>{
                 navbarToggler.classList.toggle('is-active');

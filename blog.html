@@ -24,25 +24,81 @@
 </head>
 
 <body>
-  <!-- #############################
-      HEADER
+ <!-- #############################
+      HEADER 
     ##################################-->
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="nav-container">
-            <a href="index.html" class="home-button" role="button" aria-pressed="false">HOME</a>
-            <a href="#" role="button" aria-pressed="false"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" role="button" aria-pressed="false"><i class="fab fa-twitter"></i></a>
-            <a href="#" role="button" aria-pressed="false"><i class="fab fa-google-plus-g"></i></a>
+    <header id="header" class="home fixed-top">
+
+
+      <!-- #############################
+        NAVBAR 
+      ##################################-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg justify-content-start">
+          <a class="navbar-brand scroll-to-home" href="#"><img class="logo-brand"
+              src="./img/PORUMBELUL TRACTARI fara telefon200x200 text inchis.png" alt="A piggeon pulling a car icon">
+            <h5 class="navbar-brand-text">Porumbelul Tractari</h5>
+          </a>
+          <button class=" navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav text-center ml-auto">
+              <li class="nav-item">
+                <a class="nav-link main-links" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <div class="social-icons">
+                  <a href="#" class="badge social facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="badge social google-plus" target="_blank"><i class="fab fa-google-plus"></i></a>
+                  <a href="#" class="badge social twitter" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
+      <!--end nav-->
+    </header>
+    <!--end header-->
+
+    <!-- #############################
+      HERO 
+    ##################################-->
+  <section  id="hero" data-type="background" data-speed="5">
+    <div class="container-fluid banner">
       <div class="row">
-        <div class="col-12 header-img-container"></div>
+        <div class="col-lg-4">
+          <div class="logo-container m-auto">
+            <img class="logo" src="./img/PORUMBELUL TRACTARI fara telefon200x200.png"
+              alt="A piggeon pulling a car icon">
+          </div>
+        </div>
+        <!--col-sm-4-->
+        <div class="col-lg-4">
+          <h1>PORUMBELUL TRACTARI</h1>
+          <h4>SERIOZITATE SI PROFESIONALISM <br> ATUNCI CAND AI NEVOIE</h4>
+        </div>
+        <!--col-sm-4-->
+        <div class="col-lg-4">
+          <div class="info-container text-center m-auto">
+            <h3>NON STOP <i class="fas fa-headset"></i></h3>
+            <hr class="info-hr">
+            <h5>SUNA ACUM | <span class="phone">Tel: +40785911911</span></h5>
+          </div>
+        </div>
+        <!--col-sm-4-->
       </div>
-  </header>
+      <!--end row-->
+      <!-- <h1>PORUMBELUL TRACTARI</h1>
+          <h4>SERIOZITATE SI PROFESIONALISM <br> ATUNCI CAND AI NEVOIE</h4> -->
+    </div>
+    <!--end container banner-->
+  </section>
 
   <!-- #############################
       CONTENT
@@ -127,15 +183,28 @@
   </section>
 
 
-
-
-  <!-- #############################
+<!-- #############################
       FOOTER
     ##################################-->
 
-  <footer>
-
-  </footer>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+  
+            <div class="footer-social-wraper m-auto">
+              <div class="footer-social">
+                <a href="#" class="badge social facebook mr-20" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="badge social google-plus" target="_blank"><i class="fab fa-google-plus"></i></a>
+                <a href="#" class="badge social twitter" target="_blank"><i class="fab fa-twitter-square"></i></a>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
