@@ -80,9 +80,24 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onscroll =() => {
         const yOffset = window.pageYOffset;
         const despreNoiHeight = document.querySelector('.despre-noi');
-        const elementTop = despreNoiHeight.offsetTop - 300;
-        if (yOffset >= elementTop) {
+        const tractariAutoHeight = document.querySelector('.tractari-auto');
+        const tarifeTractariHeight = document.querySelector('.tarife-tractari');
+        const despreNoielementTop = despreNoiHeight.offsetTop - 300;
+        const tractariAutoTop = tractariAutoHeight.offsetTop - 300;
+        const tarifeTractariTop= tarifeTractariHeight.offsetTop - 300;
+        if (yOffset >= despreNoielementTop) {
             document.querySelector('.curtain').classList.add('curtain-off');
+        }
+        if(yOffset >= tractariAutoTop){
+            document.querySelectorAll('.example').forEach((element)=>{
+                element.classList.add('jello-horizontal');
+            });
+        }
+        if(yOffset >= tarifeTractariTop){
+            document.querySelectorAll('.bullet').forEach((element)=>{
+                element.classList.add('roll-in-left');
+            });
+
         }
     };
 });
