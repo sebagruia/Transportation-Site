@@ -20,8 +20,8 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-img{
-    width:100%;
+img {
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -33,7 +33,7 @@ img{
 }
 
 .hidden {
-    display: none!important;
+    display: none !important;
 }
 
 /*====HEADER==== */
@@ -163,7 +163,7 @@ header .info-row {
 #hero {
     height: 100vh;
     background-image: url('../img/roadWithBrakeSigns.jpg');
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -181,7 +181,7 @@ header .info-row {
     text-align: center;
 }
 
-#hero .banner  {
+#hero .banner {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
@@ -213,7 +213,7 @@ header .info-row {
 .despre-noi .despre-noi-col1 {
     display: table;
     background-color: #646262;
-    animation-name:curtain;
+    animation-name: curtain;
     animation-duration: 1s;
 
 }
@@ -229,31 +229,31 @@ header .info-row {
 }
 
 .despre-noi .despre-noi-col2 {
-    position:relative;
+    position: relative;
     height: 450px;
-    padding:0;
+    padding: 0;
     background: #FCCA47;
     overflow: auto;
 }
 
- .curtain{
-    position:absolute;
+.curtain {
+    position: absolute;
     background-color: #646262;
-    width:100%;
-    height:450px;
+    width: 100%;
+    height: 450px;
 }
 
-.curtain-off{
-    transform:translate(-100%, 0);
-    -webkit-transform:translate(-100%, 0);
-    -moz-transform:translate(-100%, 0);
-    -ms-transform:translate(-100%, 0);
-    -o-transform:translate(-100%, 0);
-    transition:transform cubic-bezier(.17,.67,.83,.67)1s;
-    -webkit-transition:transform cubic-bezier(.17,.67,.83,.67)1s;
-    -moz-transition:transform cubic-bezier(.17,.67,.83,.67)1s;
-    -ms-transition:transform cubic-bezier(.17,.67,.83,.67)1s;
-    -o-transition:transform cubic-bezier(.17,.67,.83,.67)1s;
+.curtain-off {
+    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transition: transform cubic-bezier(.17, .67, .83, .67)1s;
+    -webkit-transition: transform cubic-bezier(.17, .67, .83, .67)1s;
+    -moz-transition: transform cubic-bezier(.17, .67, .83, .67)1s;
+    -ms-transition: transform cubic-bezier(.17, .67, .83, .67)1s;
+    -o-transition: transform cubic-bezier(.17, .67, .83, .67)1s;
 }
 
 .despre-noi .despre-noi-description {
@@ -677,15 +677,17 @@ footer {
     .logo-brand {
         width: 80px;
     }
+
     .navbar-toggler {
         top: 39px !important;
     }
+
     .navbar-brand {
         font-size: 1.3rem !important;
     }
 
     #hero .banner {
-        top: 116px;
+        top: 108px;
     }
 
     #hero .banner h1 {
@@ -697,7 +699,7 @@ footer {
     }
 }
 
-@media screen and (min-width:400px){
+@media screen and (min-width:400px) {
 
     .car-crashed {
         left: 19%;
@@ -705,22 +707,23 @@ footer {
 
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) {
     #hero .banner {
-        top: 87px;
+        top: 117px;
         height: 228px;
     }
-#hero .banner h1 {
-        margin-top: 20px;
+
+    #hero .banner h1 {
+        margin-top: 8px;
     }
 
-.car-crashed {
-    left: 23%;
-}
+    .car-crashed {
+        left: 23%;
+    }
 }
 
 @media screen and (min-width:576px) {
-    .car-platform{
+    .car-platform {
         top: 101%;
         left: 24%;
     }
@@ -733,12 +736,12 @@ footer {
         padding: 5vh 0 5vh 0;
     }
 
-    .despre-noi .despre-noi-col1, 
-    .despre-noi .despre-noi-col2, 
+    .despre-noi .despre-noi-col1,
+    .despre-noi .despre-noi-col2,
     .tractari-auto-description {
         height: 350px;
     }
-    
+
 
 }
 
@@ -746,32 +749,36 @@ footer {
     #hero .banner h1 {
         font-size: 2.2em;
     }
+
     #hero .banner h4 {
         font-size: 1.2em;
     }
 }
 
-@media screen and (min-width:992px){
-    .navbar-nav{
-        padding-top:0;
+@media screen and (min-width:992px) {
+    .navbar-nav {
+        padding-top: 0;
     }
+
     .logo-brand {
         width: 50px;
     }
 
-    .navbar-brand{
-        margin-right:0!important;
-        width:62px;
+    .navbar-brand {
+        margin-right: 0 !important;
+        width: 62px;
     }
 
     .navbar .nav-item {
         border-bottom: none;
         border-right: 1px solid #343a40;
-        width:149px;
+        width: 149px;
     }
+
     .nav-link {
-        padding:0!important;
+        padding: 0 !important;
     }
+
     .navbar .nav-item:nth-child(6) {
         margin-bottom: 0;
     }
@@ -790,8 +797,8 @@ footer {
 
     .banner .logo-container {
         display: inline-block;
-        width:150px;
-        height:auto;
+        width: 150px;
+        height: auto;
         padding: 15px 0px;
     }
 
@@ -812,18 +819,21 @@ footer {
         width: 85%;
         padding-top: 50px;
     }
+
     .despre-noi {
         padding: 10vh 0 10vh 0;
     }
-    .tractari-auto{
+
+    .tractari-auto {
         padding-bottom: 10vh;
     }
+
     .car-crashed {
         top: 21%;
     }
 }
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:1200px) {
     #hero .banner h1 {
         font-size: 2em;
     }
@@ -832,8 +842,8 @@ footer {
         font-size: 1.2em;
     }
 
-    .despre-noi .despre-noi-col1, 
-    .despre-noi .despre-noi-col2, 
+    .despre-noi .despre-noi-col1,
+    .despre-noi .despre-noi-col2,
     .tractari-auto-description {
         height: 450px;
     }
@@ -842,7 +852,8 @@ footer {
         font-size: 1.1em;
         line-height: 33px;
     }
-     .tractari-auto-description p {
+
+    .tractari-auto-description p {
         font-size: 1.1em;
         line-height: 30px;
     }
@@ -870,9 +881,9 @@ footer {
 
 @media only screen and (max-width: 1366px) {
     #hero {
-      background-attachment: scroll;
+        background-attachment: scroll;
     }
-  }
+}
 
 @media screen and (max-height:479px) {
     .navbar-nav {
