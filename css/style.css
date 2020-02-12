@@ -212,14 +212,9 @@ header .info-row {
 
 .despre-noi .despre-noi-col1 {
     display: table;
-    height: 450px;
-}
-
-
-
-
-.despre-noi .despre-noi-col1 {
     background-color: #646262;
+    animation-name:curtain;
+    animation-duration: 1s;
 
 }
 
@@ -234,9 +229,31 @@ header .info-row {
 }
 
 .despre-noi .despre-noi-col2 {
+    position:relative;
     height: 450px;
+    padding:0;
     background: #FCCA47;
     overflow: auto;
+}
+
+ .curtain{
+    position:absolute;
+    background-color: #646262;
+    width:100%;
+    height:450px;
+}
+
+.curtain-off{
+    transform:translate(-100%, 0);
+    -webkit-transform:translate(-100%, 0);
+    -moz-transform:translate(-100%, 0);
+    -ms-transform:translate(-100%, 0);
+    -o-transform:translate(-100%, 0);
+    transition:transform cubic-bezier(.17,.67,.83,.67)1s;
+    -webkit-transition:transform cubic-bezier(.17,.67,.83,.67)1s;
+    -moz-transition:transform cubic-bezier(.17,.67,.83,.67)1s;
+    -ms-transition:transform cubic-bezier(.17,.67,.83,.67)1s;
+    -o-transition:transform cubic-bezier(.17,.67,.83,.67)1s;
 }
 
 .despre-noi .despre-noi-description {
@@ -309,10 +326,6 @@ header .info-row {
     overflow: auto;
 }
 
-/* .tractari-auto-description p {
-    padding: 45px 25px 40px;
-    line-height: 28px;
-} */
 
 /* Carousel */
 
@@ -351,7 +364,6 @@ header .info-row {
 .explicare-tarife {
     min-height: 500px;
     background: #fcca47;
-    /* margin-bottom: 50px; */
 }
 
 .explicare-tarife .row .col-sm-4 {

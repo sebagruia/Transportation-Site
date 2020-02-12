@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -9,29 +6,29 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.scroll-to-home').click(function () {
         $('html, body').animate({
             scrollTop: $('#hero').offset().top
-        },1000);
+        }, 1000);
     });
     $('.scroll-to-despre-noi').click(function () {
         $('html, body').animate({
-            scrollTop: $('.despre-noi').offset().top -100
-        },1000);
+            scrollTop: $('.despre-noi').offset().top - 100
+        }, 1000);
     });
 
 
     $('.scroll-to-tractari-auto').click(function () {
         $('html, body').animate({
-            scrollTop: $('.tractari-auto-title').offset().top -140
+            scrollTop: $('.tractari-auto-title').offset().top - 140
         }, 1000);
     });
 
     $('.scroll-to-tarife-tractari').click(function () {
         $('html, body').animate({
-            scrollTop: $('.tarife-tractari-title').offset().top -90
+            scrollTop: $('.tarife-tractari-title').offset().top - 90
         }, 1000);
     });
     $('.scroll-to-contact').click(function () {
         $('html, body').animate({
-            scrollTop: $('.suntem-aici-title-wraper').offset().top -60
+            scrollTop: $('.suntem-aici-title-wraper').offset().top - 60
         }, 1000);
     });
 
@@ -67,16 +64,25 @@ document.addEventListener('DOMContentLoaded', () => {
         navbarToggler.classList.toggle('is-active');
     });
 
-    navLinks.forEach((navLink)=>{
-        if(width<=992){
-            navLink.addEventListener('click', ()=>{
+    navLinks.forEach((navLink) => {
+        if (width <= 992) {
+            navLink.addEventListener('click', () => {
                 navbarToggler.classList.toggle('is-active');
                 navbarToggler.classList.toggle('collapsed');
                 navbarCollapse.classList.toggle('show');
-                
+
             });
         }
-        
-    });
-});
 
+    });
+
+    // Slide out effect when the "Despre Noi" section is in the center of the viewport
+    window.onscroll =() => {
+        const yOffset = window.pageYOffset;
+        const despreNoiHeight = document.querySelector('.despre-noi');
+        const elementTop = despreNoiHeight.offsetTop - 300;
+        if (yOffset >= elementTop) {
+            document.querySelector('.curtain').classList.add('curtain-off');
+        }
+    };
+});
