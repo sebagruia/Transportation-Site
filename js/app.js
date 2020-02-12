@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Adding Background Parallax to devices with width > 576px
     const width = window.innerWidth;
-    if (width > 576) {
+    if (width > 768) {
         const hero = document.getElementById('hero');
         window.addEventListener('scroll', (e) => {
             if (hero.getAttribute("data-type") === 'background') {
