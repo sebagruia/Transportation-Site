@@ -49,12 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Removing navbar-brand text for devices with width > 992px
-    if (width >= 992) {
-        const navbarBrandText = document.querySelector('.navbar-brand-text');
-        navbarBrandText.innerText = '';
-    }
-
 
     // Hamburger and Navbar-collapse Functionality
     const navLinks = document.querySelectorAll('.nav-link');

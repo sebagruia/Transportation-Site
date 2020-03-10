@@ -903,7 +903,7 @@ footer {
 @media screen and (max-width:768px) {
     footer{
         width:100%;
-        background-color: #00a0e3;
+        background: #00a0e3;
         position: fixed;
         bottom: 0;
     }
@@ -930,6 +930,10 @@ footer {
     .navbar-brand {
         margin-right: 0 !important;
         width: 62px;
+    }
+
+    .navbar-brand .navbar-brand-text{
+        display:none;
     }
 
     .navbar .nav-item {
