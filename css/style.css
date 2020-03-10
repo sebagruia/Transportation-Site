@@ -591,18 +591,17 @@ footer {
 }
 
 .footer-social {
-    display: table;
     width: 150px;
     height: 100px;
     text-align: center;
 }
 
 .footer-social-wraper {
-    display: table;
-    width: 250px;
+    display:table;
+    width: 300px;
     height: 100px;
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .footer-social-wrapper a {
@@ -616,6 +615,27 @@ footer {
 
 .footer-social .badge {
     margin-right: 20px;
+}
+
+.footer-warning-content{
+    display:none;
+    
+}
+.footer-warning-content h5,
+.footer-warning-content .fa-phone-alt{
+    display:table-cell;
+    vertical-align: middle;
+    color:#fff;
+}
+
+.footer-warning-content h5{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-warning-content .fa-phone-alt{
+    padding: 0 17px;
+    font-size: 2rem;
 }
 
 
@@ -878,6 +898,24 @@ footer {
     #hero .banner h4 {
         font-size: 1.2em;
     }
+}
+
+@media screen and (max-width:768px) {
+    footer{
+        width:100%;
+        background-color: #00a0e3;
+        position: fixed;
+        bottom: 0;
+    }
+    .footer-social-wraper {
+        display:none;
+    }
+    .footer-warning-content{
+        display:table;
+        width: 300px;
+        height: 80px;
+    }
+
 }
 
 @media screen and (min-width:992px) {
