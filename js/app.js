@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
     //  Scroll on buttons using Jquery
 
     $('.scroll-to-home').click(function () {
